@@ -11,29 +11,80 @@
   <a href="Login.html">LOGIN</a>
 </nav>
 <h1 >Register</h1>
-<img src="download.png" width="250px" height="250px">
+<img src="pic.jpg" width="250px" height="250px" alt="profile pic">
+<fieldset>
 <form>
-    <label>Name</label>
-    <input type="text" placeholder="Enter your name" name="Username">
-    <br><br>
-    <label>E-mail</label>
-    <input type="email" placeholder="Enter your Email id" name="Email">
-    <br><br>
-    <label>Phone number</label>
-    <input type="text"  name="ph_num">
-    <br><br>
-    <label>Age</label>
-    <input type="number" min="18" max="60" name="age">
-    <br><br>
-    <label>Gender     </label>
-<label>Male</label>
-    <input type="radio" name="gender" value="male">
-    <label>Female</label>
-    <input type="radio" name="gender" value="female">
-    <label>Other</label>
-    <input type="radio" name="gender" value="other">
-    <br><br>
-    <input type="submit"  style="background-color:powderblue" value="Register "  >
+    <table>
+        <tr>
+            <td><label>Name</label> </td>
+            <td><input type="text" placeholder="Enter your name" name="Username"></td>
+        </tr>
+
+        <tr>
+           <td><label>E-mail</label></td>
+            <td><input type="email" placeholder="Enter your Email id" name="Email"></td>
+        </tr>
+
+        <tr>
+            <td><label>Phone number</label></td>
+            <td><input type="text"  name="ph_num"></td>
+        </tr>
+        <tr>
+            <td><label>Age</label></td>
+            <td><input type="number" min="18" max="60" name="age"></td>
+        </tr>
+        <tr>
+            <td><label>Gender   </label></td>
+            <td>
+                <label>Male</label>
+                <input type="radio" name="gender" value="male">
+                <label>Female</label>
+                <input type="radio" name="gender" value="female">
+                <label>Other</label>
+                <input type="radio" name="gender" value="other">
+            </td>
+
+        </tr>
+        <tr>
+            <td><label>Address</label></td>
+            <td colspan="2"><textarea cols="30" rows="10" name="address"></textarea></td>
+        </tr>
+        <tr>
+            <td><label>Languages</label></td>
+            <td>
+                <label>English</label>
+                <input type="checkbox" name="lang1" value="english">
+                <label>Hindi</label>
+                <input type="checkbox" name="lang1" value="hindi">
+                <label>Malayalam</label>
+                <input type="checkbox" name="lang1" value="malayalam">
+            </td>
+        </tr>
+        <tr>
+            <td>District</td>
+            <td>
+                <select name="District">
+                    <option value="EKM">Ernakulam</option>
+                    <option value="ALP">Alappuzha</option>
+                    <option value="TVM">Thiruvanathapuram</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td><label>Create password</label></td>
+            <td> <input type="password" name="password" required></td>
+        </tr>
+        <tr>
+            <td>Choose your profile photo</td>
+            <td><input type="file" name="profile_photo"></td>
+        </tr>
+        <tr>
+            <td><input type="submit"  style="background-color:powderblue" value="Register "  ></td>
+        </tr>
+
+    </table>
+
 </form>
+</fieldset>
 </body>
 </html>
